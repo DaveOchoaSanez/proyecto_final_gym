@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM WEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+        .nav-link {
+            font-family: 'Anton', sans-serif;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #fff;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .nav-link:hover {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 5px;
+
+        }
+
+        h3 {
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 5px;
+
+        }
+
+        body {
+            background-color: #28A7E9;
+            color: #fff;
+    font-family: 'Anton', sans-serif;
+
+        }
+
+        .navbar {
+            background-color: #28A7E9
+            ;
+        }
+
+        .navbar-brand img {
+            max-width: 150px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            font-family: 'Anton', sans-serif;
+
+        }
+
+        footer {
+            background-color: #fff;
+            color: #1a1a1a;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 15px;
+            font-size: 1.5rem;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+        .carousel-item {
+      height: 500px;
+    }
+    .carousel-item img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .btn-transparent {
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid #fff;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+    .btn-transparent:hover {
+      background: #fff;
+      color: #000;
+      border-color: #000;
+    }
+
+    .surprise-section {
+      background: linear-gradient(135deg, #fff, #fff);
+      padding: 50px 15px;
+      color: #fff;
+      text-align: center;
+    }
+    .surprise-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .surprise-section p {
+      font-size: 1.2rem;
+    }
+    .surprise-section .surprise-icon {
+      font-size: 4rem;
+      margin: 20px 0;
+      animation: bounce 1.5s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Gloria"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="about.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="bmi.html">Bmi Calculate</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/breadcrumb-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-center">
+              <h1>¡Bienvenido a la Experiencia!</h1>
+              <p>Explora nuestras opciones y encuentra lo mejor para ti.</p>
+              <a href="#" class="btn btn-transparent">Descubre más</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner-bg.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption text-center">
+              <h1>¡Hazlo Posible!</h1>
+              <p>Conéctate con la innovación.</p>
+              <a href="#" class="btn btn-transparent">Conoce más</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      <div class="surprise-section">
+        <h2>¡Un toque de magia para ti!</h2>
+        <i class="surprise-icon">✨</i>
+        <p>Esta sección está diseñada para captar la atención, transmitir emoción y dejar una impresión duradera. Perfecto para destacar promociones o mensajes clave.</p>
+        <a href="#" class="btn btn-light">¡Quiero saber más!</a>
+      </div>
+
+
+
+      <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2 class="fw-bold">¿Qué hacemos?<br><span style="color: #fff;">LLEVA TUS LÍMITES MÁS ALLÁ</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 d-flex flex-column flex-md-row align-items-center mb-4">
+                <img src="images/class-2.jpg" class="img-fluid mb-3 mb-md-0" alt="Service 1" style="max-width: 300px; height: auto;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h4 class="fw-bold">Entrenamientos Personalizados</h4>
+                    <p>Disfruta de rutinas adaptadas a tus objetivos, guiadas por nuestros expertos en fitness.</p>
+                    <a href="#" class="btn btn-warning text-white">Saber más</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex flex-column flex-md-row align-items-center mb-4">
+                <img src="images/class-3.jpg" class="img-fluid mb-3 mb-md-0" alt="Service 2" style="max-width: 300px; height: auto;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h4 class="fw-bold">Clases Grupales</h4>
+                    <p>Participa en clases dinámicas diseñadas para mantenerte motivado y alcanzar tus metas.</p>
+                    <a href="#" class="btn btn-warning text-white">Explorar clases</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex flex-column flex-md-row align-items-center mb-4">
+                <img src="images/class-1.jpg" class="img-fluid mb-3 mb-md-0" alt="Service 3" style="max-width: 300px; height: auto;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h4 class="fw-bold">Nutrición y Bienestar</h4>
+                    <p>Descubre planes nutricionales personalizados que complementan tu entrenamiento.</p>
+                    <a href="#" class="btn btn-warning text-white">Descubre más</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 d-flex flex-column flex-md-row align-items-center mb-4">
+                <img src="images/download.jpg" class="img-fluid mb-3 mb-md-0" alt="Service 4" style="max-width: 300px; height: auto;">
+                <div class="ms-md-3 text-center text-md-start">
+                    <h4 class="fw-bold">Equipo de Última Generación</h4>
+                    <p>Accede a máquinas modernas y espacios diseñados para maximizar tu rendimiento.</p>
+                    <a href="#" class="btn btn-warning text-white">Ver instalaciones</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-upper case mb-3">Historia</h5>
+                    <p>Gimnasios Mega Force nace de la idea de dos jóvenes apasionados por el deporte y la actividad física, quienes vieron en ello no solo una forma de mejorar la salud, sino también, una forma de diversión sana en la que todas las personas puedan acceder</p>
+                    <img src="images/logo.png" alt="Logo de la Empresa" class="img-fluid mt-3"
+                        style="max-width: 150px;">
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-upper case mb-3">Enlaces</h5>
+                     <ul class="list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Productos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-3">Síguenos</h5>
+                    <div class="social-icons">
+                        <a href="#" style="color: #3b5998;"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" style="color: #1DA1F2;"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" style="color: #C13584;"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" style="color: #0077b5;"><i class="bi bi-linkedin fs-4"></i></a>
+                    </div>
+                </div> 
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="text-upper case mb-3">Contáctanos</h5>
+                    <p class="mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Lima, Perú</p>
+                    <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i>info@megaforce.com</p>
+                    <p><i class="bi bi-telephone-fill me-2"></i>+51 987 654 321</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p class="mb-0">&copy; MEGA FORCE © 2025 Todos los derechos reservados..</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

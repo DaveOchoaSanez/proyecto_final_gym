@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
+body {
+    font-family: "Mukta", sans-serif;
+
+    background-color: #1F67BD;
+    color: #fff;
+}
+h2 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+
+}
+h3 {
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 5px;
+
+}
+nav {
+    background-color: #151515;
+}
+nav .nav-link {
+    transition: color 0.3s;
+    font-size: 20px;
+    margin-right: 35px;
+}
+nav .nav-link:hover {
+    color: #fff;
+}
+img {
+    filter: grayscale(50%);
+    transition: filter 0.5s, transform 0.3s;
+}
+img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+.btn {
+    background-color: rgb(207, 33, 178);
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #974813;
+    color: black;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 30px;
+    left: 0;
+    right: auto;
+    bottom: 15%; 
+    text-align: left;
+    max-width: 50%; 
+    color: #fff;
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: #fff;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+    color: #f8f9fa;
+}
+
+.carousel-caption .btn {
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.card-img-top {
+    max-width: 300px;
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border: none; 
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.btn {
+    margin-top: 10px;
+}
+#about-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#about-section p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#about-section img {
+    transition: transform 0.3s ease;
+}
+
+#about-section img:hover {
+    transform: scale(1.05);
+}
+
+.btn i {
+    margin-right: 5px;
+}
+footer h5 {
+    font-size: 1.25rem;
+    color: #f8f9fa;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer p, footer a {
+    font-size: 0.9rem;
+}
+
+
+/* Personalización de la tarjeta */
+.plan-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Efecto hover para las tarjetas */
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo del precio */
+.price {
+    font-weight: bold;
+    color: #28A7E9;
+
+}
+
+/* Agregar espacio y forma a los iconos */
+.card ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.card ul li i {
+    color: #fff;
+    margin-right: 10px;
+}
+
+/* Estilo para el botón */
+.btn-lg {
+    background-color:#EC008C;
+    border-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.btn-lg:hover {
+    background-color: #e35700;
+    border-color: #e35700;
+}
+
+
+/* Fondo con imagen para el footer */
+footer {
+    background-color: #fff; /* Color de fondo oscuro */
+    color: #000;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: left;
+}
+
+/* Mejora la apariencia de los enlaces */
+footer a {
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Iconos de redes sociales */
+footer .bi {
+    transition: color 0.3s;
+}
+
+footer .bi:hover {
+    color: #fff;
+}
+
+/* Estilo para las secciones del footer */
+footer h5 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Espaciado para las secciones */
+footer .container .row {
+    margin-bottom: 20px;
+}
+
+/* Estilos adicionales para la sección de copyright */
+footer .text-center p {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 767px) {
+    footer .container {
+        padding: 20px;
+    }
+
+    footer h5 {
+        font-size: 1rem;
+    }
+
+    footer p {
+        font-size: 0.85rem;
+    }
+}
+
+
+/* Aplica la fuente a los enlaces del navbar */
+.nav-link {
+    font-family: 'Anton', sans-serif; /* Usa la fuente Anton */
+    position: relative; /* Necesario para la línea diagonal */
+    transition: color 0.3s ease-in-out; /* Transición suave de color */
+}
+
+/* Estilo del hover */
+.nav-link:hover {
+    color: #fff; /* Color de texto en hover */
+}
+
+/* Línea diagonal en el hover */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Color de la línea */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+/* Cuando se pasa el mouse, la línea se activa */
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Efecto de hover suave */
+.nav-link:hover {
+    text-decoration: none; /* Elimina la subrayado predeterminada */
+}
+
+/* Responsive navbar */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+
+/* Efecto de hover suave en las tarjetas */
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta ligeramente */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilo de los botones */
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff; /* Cambia a un color naranja al hacer hover */
+    color: black;
+}
